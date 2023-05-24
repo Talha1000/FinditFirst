@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FinditFirst</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+body {
+    background-image: url('michael-dziedzic-1bjsASjhfkE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+h1 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.options {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.option-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    width: 200px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.option-card:hover {
+    background-color: #e0e0e0;
+}
+
+.option-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.option-card span {
+    font-size: 16px;
+}
+
+.option-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    background-color: #f5f5f5;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+             <a href="home.html"><h1 class="display-4"><strong>FindItFirst</strong></h1></a>
+        </div>
+        <h1 class="display-4">Welcome to FindItFirst</h1>
+        <p class="lead">Report lost items, search for items, and connect with finders.</p>
+        
+        <div class="buttons">
+            <a href="login.php" class="btn btn-primary">Login</a>
+            <a href="registration.php" class="btn btn-primary">Register</a>
+            <a href="logout.php" class="btn btn-primary">Logout</a>
+        </div>
+        
+        <div class="options">
+            <h2 class="mb-4">What would you like to do?</h2>
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+                <li>
+                    <a href="submission.php" class="option-card card mb-3">
+                        <img src="pngtree-vector-report-icon-png-image_533333.jpg" alt="Report Lost Item" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Report a Lost Item</h5>
+                        </div>
+                    </a>
+                </li>
+				<li>
+                    <a href="search.php" class="option-card card mb-3">
+                        <img src="pngtree-vector-search-icon-png-image_1025744.jpg" alt="Search" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Search</h5>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_items.php" class="option-card card mb-3">
+                        <img src="download.png" alt="Lost Items" class="card-img-top">
+						<div class="card-body">
+						<h5 class="card-title">Lost Items</h5>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="reportitem.php" class="option-card card mb-3">
+                        <img src="found.jpg" alt="Report Found Item" class="card-img-top">
+						<div class="card-body">
+						<h5 class="card-title">Report a Found Item</h5>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="claim_items.php" class="option-card card mb-3">
+                        <img src="claim.jpg" alt="Claim Items" class="card-img-top">
+						<div class="card-body">
+						<h5 class="card-title">Claim Items</h5>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.php" class="option-card card mb-3">
+                        <img src="profile.jpg" alt="Profile" class="card-img-top">
+						<div class="card-body">
+						<h5 class="card-title">Profile</h5>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="adminlogin.php" class="option-card">
+                        <img src="adminpic.jpg" alt="Admin Login" class="card-img-top">
+						<div class="card-body">
+						<h5 class="card-title">Admin Panel</h5>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Lost Item Management System. All rights reserved. | <a href="privacy_policy.php" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+        <div class="social-links">
+            <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="Linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+	
+    <script>
+        // JavaScript code to add interactivity or additional effects
+
+        // Example: Add a smooth scroll effect when clicking on option cards
+        document.addEventListener('DOMContentLoaded', function() {
+            var optionCards = document.querySelectorAll('.option-card');
+            optionCards.forEach(function(card) {
+                card.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var targetId = card.getAttribute('href');
+                    var targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript code for handling the options
+
+        // Function to redirect to the specified URL when an option is clicked
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+
+        // Get all option cards
+        const optionCards = document.querySelectorAll('.option-card');
+
+        // Add click event listener to each option card
+        optionCards.forEach(card => {
+            card.addEventListener('click', (event) => {
+                event.preventDefault();
+                const url = card.getAttribute('href');
+                redirectTo(url);
+            });
+        });
+    </script>
+</body>
+</html>
